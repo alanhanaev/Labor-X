@@ -270,8 +270,11 @@ class CreateJobForm extends React.Component {
   }
 
   renderLoader = (isLoading) => {
-    if (!isLoading) { return null }
-    else { <CircularProgress className={css.submitProgress} size={24} /> }
+    if (!isLoading) { 
+      return null 
+    } else { 
+      return <CircularProgress className={css.submitProgress} size={24} /> 
+    }
   }
 
   renderJoinRequirementBlock = (props) => {
